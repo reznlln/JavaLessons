@@ -5,48 +5,41 @@ import firstProject.Food;
 import firstProject.model.constans.Colour;
 import firstProject.model.constans.Discount;
 
-public class ShoppingCart implements Discountable {
+public class ShoppingCart{
     Food[] items;
-    public ShoppingCart(Food[] obj){
-
+    public ShoppingCart(Food[] items){
+        this.items = items;
     }
 
-    public void GetSumWithoutDiscount(Food[] item){
+    public void GetSumWithoutDiscount(Food[] items){
 
         double total = 0;
-        for (int i = 0; i < item.length; i++) {
-             total = total + item[i].price;
+        for (int i = 0; i < items.length; i++) {
+             total = total + items[i].price;
         }
         System.out.println(total);
     }
-    @Override
-    public double getDiscount(Apple item){
-        //Discount discount = new Discount();
+    public void GetSumWithDiscount(Food[] items){
 
-        if (item.colour == Colour.Red) {
-            return Discount.discount;
-        }
-        else return 0;
-    }
+       double totalPriceWithDiscount = 0;
+       double discount = 0;
 
-    public void GetSumWithDiscount(Apple[] item){
-
-       double itemPrice = 0;
-
-       for (int i = 0; i < item.length; i++)
+       for (int i = 0; i < items.length; i++)
        {
-           double discount = getDiscount(item[i]);
-                if (discount != 0) {
-                    itemPrice  = itemPrice + ((item[i].price * item[i].amount) * discount/100);
-                    System.out.println("Цена со скидкой: " + itemPrice);
-                }
-                else
-                {
-                    itemPrice = itemPrice + (item[i].price * item[i].amount);
-                    System.out.println("Полная стоимость: " + itemPrice);
-                }
-      }
-       System.out.println(itemPrice);
+           // items.getDiscount();
+       }
+
+//                if (discount!= 0) {
+//                    totalPriceWithDiscount  = totalPriceWithDiscount + ((item[i].price * item[i].amount) * discount/100);
+//                    System.out.println("Цена со скидкой: " + totalPriceWithDiscount);
+//                }
+//                else
+//                {
+//                    totalPriceWithDiscount = totalPriceWithDiscount + (item[i].price * item[i].amount);
+//                    System.out.println("Полная стоимость: " + totalPriceWithDiscount);
+//                }
+//      }
+       System.out.println(totalPriceWithDiscount);
     }
 
     public int GetSumVegeterianFoodWithoutDiscount(){

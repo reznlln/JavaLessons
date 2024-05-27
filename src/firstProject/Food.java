@@ -5,8 +5,17 @@ public abstract class Food {
     public double price;
     public boolean isVegetarian;
 
-    public double getPrice(){
-        return price;
+    public Food(int amount, double price, boolean isVegetarian) {
+        this.amount = amount;
+        this.price = price;
+        this.isVegetarian = isVegetarian;
     }
+
+    public double getPrice() {
+        return price;
+
+    }
+
+
 }
 
