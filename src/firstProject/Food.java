@@ -1,6 +1,6 @@
 package firstProject;
 
-public abstract class Food {
+public abstract class Food{
     public int amount;
     public double price;
     public boolean isVegetarian;
@@ -17,5 +17,6 @@ public abstract class Food {
     }
 
 
+    public abstract double getDiscount();
 }
 

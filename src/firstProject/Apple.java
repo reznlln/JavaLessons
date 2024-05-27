@@ -16,13 +16,11 @@ public class Apple extends Food implements Discountable{
             return Discount.discount;
         }
         else
-            return 0;
+            return 0.0;
     }
 
     @Override
     public double getPrice() {
         return super.getPrice();
     }
-
-    public String getColour(){ return colour; }
 }
