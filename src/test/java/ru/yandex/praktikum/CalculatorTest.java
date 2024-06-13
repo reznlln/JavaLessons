@@ -7,7 +7,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import static org.junit.Assert.assertEquals;
 
-
 @RunWith(Parameterized.class)
 public class CalculatorTest {
     private final int a;
