@@ -1,4 +1,4 @@
-package main.java.ru.yandex.praktikum.lessons;
+package ru.yandex.praktikum.lessons;
 
 public class SwapTest {
     public static void main (String[] args) {

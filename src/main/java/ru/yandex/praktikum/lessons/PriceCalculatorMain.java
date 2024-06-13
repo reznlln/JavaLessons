@@ -1,4 +1,4 @@
-package main.java.ru.yandex.praktikum.lessons;
+package ru.yandex.praktikum.lessons;
 
 class PriceCalculatorMain {
     public static void main(String[] args) {

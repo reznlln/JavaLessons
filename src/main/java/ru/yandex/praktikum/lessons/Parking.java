@@ -1,4 +1,4 @@
-package main.java.ru.yandex.praktikum.lessons;
+package ru.yandex.praktikum.lessons;
 
 public class Parking {
     // константа, отвечающая за общее количество парковочных мест

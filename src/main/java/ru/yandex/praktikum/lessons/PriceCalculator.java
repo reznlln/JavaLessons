@@ -1,4 +1,4 @@
-package main.java.ru.yandex.praktikum.lessons;
+package ru.yandex.praktikum.lessons;
 
 class PriceCalculator {
     private int priceForLine = 100; // приватная переменная

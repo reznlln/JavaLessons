@@ -1,4 +1,4 @@
-package main.java.ru.yandex.praktikum.lessons.abstractTest;
+package ru.yandex.praktikum.lessons.abstractTest;
 
 public abstract class Housing {
     public abstract void cook();

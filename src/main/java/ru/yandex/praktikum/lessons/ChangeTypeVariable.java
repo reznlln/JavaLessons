@@ -1,4 +1,4 @@
-package main.java.ru.yandex.praktikum.lessons;
+package ru.yandex.praktikum.lessons;
 
 public class ChangeTypeVariable {
     public static void CheckMethod(byte importantSmallNumber)
