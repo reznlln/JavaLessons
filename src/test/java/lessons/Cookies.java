@@ -17,12 +17,17 @@ public class Cookies {
     }
 
     @Test
-    public void getCookies(){
+    public void getCookie(){
         Response res =
                 when().get("https://www.google.com/");
 
         //get single cookies info
         String cookie_value = res.getCookie("AEC");
         System.out.println("Value of cookie is ==> " + cookie_value);
+    }
+
+    @Test
+    public void getMultipleCookies(){
+
     }
 }
