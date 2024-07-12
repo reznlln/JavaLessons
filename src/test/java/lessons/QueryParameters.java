@@ -1,4 +1,4 @@
-package assured;
+package lessons;
 
 import io.restassured.RestAssured;
 import org.junit.Before;
@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class GoogleGet {
+public class QueryParameters {
  //https://www.google.ru/search?q=слово
     @Before
     public void setUp(){

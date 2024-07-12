@@ -1,4 +1,4 @@
-package assured.mesto;
+package mesto.mesto;
 // импортируем RestAssured
 import io.restassured.RestAssured;
 // импортируем Before

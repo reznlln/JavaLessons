@@ -1,5 +1,6 @@
-package usersMe;
+package usersMePojoClass;
 
+//pojo class
 public class Users {
     private String name;
     private String about;

@@ -1,21 +1,16 @@
 package lessons;
 import io.restassured.response.Response;
-import org.testng.annotations.*;
-import io.restassured.*;
 import io.restassured.RestAssured;
 import org.junit.Before;
 import org.junit.Test;
-import org.testng.TestRunner;
-import org.testng.TestNG;
 
 import java.util.HashMap;
-import java.util.PriorityQueue;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.equalTo;
 
 
-public class HTTPRequest {
+public class HTTPRequestExamples {
 
     int id = 8;
 
@@ -24,6 +19,7 @@ public class HTTPRequest {
         RestAssured.baseURI = "https://reqres.in";
 
     }
+//first approach using hash map
 
     @Test //(Priority = 1)
     public void getUsers(){

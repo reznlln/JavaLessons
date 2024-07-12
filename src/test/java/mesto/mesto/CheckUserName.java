@@ -1,4 +1,4 @@
-package assured.mesto;
+package mesto.mesto;
 import static org.hamcrest.Matchers.equalTo;
 
 import io.restassured.response.Response;
